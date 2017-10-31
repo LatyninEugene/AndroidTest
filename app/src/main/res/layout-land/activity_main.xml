@@ -12,13 +12,104 @@
         android:id="@+id/anim_gas"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginBottom="144dp"
-        app:srcCompat="@drawable/anim_gas"
+        android:layout_marginBottom="196dp"
+        android:layout_marginEnd="248dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/anim_gas"
         tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        android:layout_marginEnd="72dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="RTrucking"
+        android:textColor="#e6e6e6"
+        android:textSize="52dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/anim_gas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cr"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="225dp"
+        android:background="#00000000"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Сделать заказ"
+        android:textColor="#e6e6e6"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg" />
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginTop="48dp"
+        android:background="#00000000"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Регистрация"
+        android:textColor="#e6e6e6"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anim_gas" />
+
+    <Button
+        android:id="@+id/Entry"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btngrad"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Войти"
+        android:textColor="#3d3d3d"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="16dp"
+        android:ems="15"
+        android:hint="Телефон"
+        android:inputType="textPersonName"
+        android:theme="@style/Blank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anim_gas" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="8dp"
+        android:ems="15"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:theme="@style/Blank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
 
 </android.support.constraint.ConstraintLayout>

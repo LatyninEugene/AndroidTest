@@ -11,7 +11,8 @@
         android:id="@+id/anim_gas"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="196dp"
+        android:layout_marginEnd="164dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,13 +24,92 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="164dp"
-        android:textSize="32dp"
-        android:text="Hello"
+        android:layout_marginBottom="196dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="RTrucking"
+        android:textColor="#e6e6e6"
+        android:textSize="36dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/anim_gas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cr"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:textSize="12dp"
+        android:background="#00000000"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Сделать заказ"
+        android:textColor="#e6e6e6"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg" />
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Регистрация"
+        android:textColor="#e6e6e6"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Entry" />
+
+    <Button
+        android:id="@+id/Entry"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Войти"
+        android:textColor="#3d3d3d"
+        android:textStyle="bold"
+        android:background="@drawable/btngrad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="Телефон"
+        android:theme="@style/Blank"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/anim_gas" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="15"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:theme="@style/Blank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
 
 
