@@ -81,16 +81,16 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+        app:layout_constraintTop_toBottomOf="@+id/mPasswordField" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/mEmailField"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
         android:layout_marginTop="16dp"
         android:ems="15"
-        android:hint="Телефон"
+        android:hint="Email"
         android:inputType="textPersonName"
         android:theme="@style/Blank"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,7 +98,7 @@
         app:layout_constraintTop_toBottomOf="@+id/anim_gas" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/mPasswordField"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
@@ -109,7 +109,7 @@
         android:theme="@style/Blank"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/mEmailField" />
 
 
 </android.support.constraint.ConstraintLayout>

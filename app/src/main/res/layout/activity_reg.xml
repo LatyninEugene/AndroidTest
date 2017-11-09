@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.latynin.testproject.Reg"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/reg_o"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btngrad"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/telephonTV"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:ems="15"
+                android:hint="Телефон"
+                android:inputType="number"
+                android:maxLength="15"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorLightGray"
+                android:theme="@style/Blank"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="20"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:maxLength="25"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorLightGray"
+                android:theme="@style/Blank"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/telephonTV" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:ems="15"
+                android:hint="Фамилия"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorLightGray"
+                android:theme="@style/Blank"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="15"
+                android:maxLength="20"
+                android:hint="Имя"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorLightGray"
+                android:theme="@style/Blank"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="15"
+                android:maxLength="20"
+                android:hint="Отчество"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorLightGray"
+                android:theme="@style/Blank"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:ems="15"
+                android:hint="Пароль"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorLightGray"
+                android:theme="@style/Blank"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/region"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/im"
+                app:layout_constraintStart_toEndOf="@+id/regT"
+                app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/colorGreenNormal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/im" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/im"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:visibility="visible"
+                android:theme="@style/DarkActionBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/regT" />
+
+            <EditText
+                android:id="@+id/regT"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Регион"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorLightGray"
+                android:theme="@style/Blank"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/admin"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/btngrad"
+            app:layout_constraintTop_toBottomOf="@+id/reg_o">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"/>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/driver"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/btngrad"
+            app:layout_constraintTop_toBottomOf="@+id/reg_o">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

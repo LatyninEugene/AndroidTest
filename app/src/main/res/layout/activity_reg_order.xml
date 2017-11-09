@@ -37,7 +37,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="340dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/btngrad"
@@ -46,43 +46,60 @@
         app:layout_constraintTop_toBottomOf="@+id/Desc">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/telephonTV"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:ems="15"
-            android:maxLength="15"
             android:hint="Телефон"
-            android:inputType="textPersonName"
+            android:inputType="number"
+            android:maxLength="15"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHint="@color/colorLightGray"
             android:theme="@style/Blank"
-            app:layout_constraintEnd_toStartOf="@+id/editText1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editText2"
-            android:layout_width="260dp"
+            android:id="@+id/email"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="72dp"
-            android:ems="15"
-            android:maxLength="20"
-            android:hint="Фамилия"
+            android:layout_marginTop="8dp"
+            android:ems="20"
+            android:hint="Email"
             android:inputType="textPersonName"
+            android:maxLength="25"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHint="@color/colorLightGray"
             android:theme="@style/Blank"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/telephonTV" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:ems="15"
+            android:hint="Фамилия"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorLightGray"
+            android:theme="@style/Blank"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
 
         <EditText
             android:id="@+id/editText3"
-            android:layout_width="260dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
@@ -100,7 +117,7 @@
 
         <EditText
             android:id="@+id/editText4"
-            android:layout_width="260dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
@@ -123,9 +140,9 @@
             android:layout_marginEnd="16dp"
             android:layout_marginTop="16dp"
             android:ems="15"
-            android:maxLength="15"
             android:hint="Пароль"
             android:inputType="textPassword"
+            android:maxLength="20"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHint="@color/colorLightGray"
             android:theme="@style/Blank"
@@ -139,7 +156,7 @@
             android:layout_marginBottom="16dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="248dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/btngrad"
             android:fontFamily="sans-serif-smallcaps"
             android:text="Создать"
@@ -148,7 +165,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/editText4" />
 
     </android.support.constraint.ConstraintLayout>
 
